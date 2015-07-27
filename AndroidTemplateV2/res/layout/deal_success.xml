@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/mainLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar" android:layout_width="fill_parent"
+	android:layout_gravity="top" android:layout_height="fill_parent"
+	android:background="@drawable/background">
+
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo">
+
+	</RelativeLayout>
+	<RelativeLayout android:orientation="vertical" android:id="@+id/restaurentname"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:padding="10px"
+				android:layout_below="@id/header">
+
+				<TextView android:id="@+id/restaurentNameText"
+					android:text="Greene Street" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="24dip"
+					android:singleLine="false" android:textStyle="bold"
+					android:layout_marginLeft="15dip" android:layout_marginTop="5dip"
+					android:textColor="#ffffff" />
+
+	</RelativeLayout>
+	<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/restaurentname"
+		android:background="@drawable/receipt_bg_blank">
+
+		<RelativeLayout android:id="@+id/body"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			
+			
+			<!-- <ImageView android:id="@+id/rd_line" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:src="@drawable/rd_line" android:layout_below="@+id/restaurentname" />
+			 -->
+			<RelativeLayout android:id="@+id/receipt_bg"
+				android:layout_width="fill_parent" android:layout_below="@+id/restaurentname"
+				android:layout_height="fill_parent" android:paddingTop="35dip"
+				>
+
+				
+				<RelativeLayout android:id="@+id/cameradash" 
+					android:layout_width="fill_parent" android:layout_below="@+id/rd_line"
+					android:layout_height="wrap_content" android:padding="15dip">
+
+					<ImageView android:id="@+id/dashboard"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:src="@drawable/receipt_icon" android:padding="12dip" />
+
+					<TextView android:id="@+id/miniDescription" android:text="@string/deal_submitted_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#28765B" android:textSize="20dip"
+						android:layout_marginTop="10dip" android:layout_marginLeft="5dip"
+						android:layout_toRightOf="@+id/dashboard" android:textStyle="bold" />
+
+					<TextView android:id="@+id/takePicture"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/pic_desc_text" android:textColor="#000000"
+						android:textSize="12dip" android:layout_marginTop="8dip"
+						android:singleLine="false" android:layout_marginLeft="5dip"
+						android:layout_toRightOf="@+id/dashboard" android:layout_below="@+id/miniDescription"
+						android:textStyle="bold" />
+
+					<ImageView android:id="@+id/spendPicture"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginTop="8dip" android:layout_marginLeft="5dip"
+						android:layout_toRightOf="@+id/dashboard" android:layout_below="@+id/takePicture"
+						android:src="@drawable/spend_get" />
+					<RelativeLayout android:layout_width="wrap_content"
+						android:id="@+id/submit" android:layout_height="wrap_content"
+						android:background="@drawable/submit_photo_bg"
+						android:layout_centerHorizontal="true" android:layout_marginTop="50dip"
+						android:layout_below="@id/spendPicture">
+						<ImageView android:id="@+id/cameraSubmit"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:src="@drawable/submitted" android:layout_centerInParent="true" />
+					</RelativeLayout>
+				</RelativeLayout>
+
+				<!-- <RelativeLayout android:id="@+id/linesSection" android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:background="@drawable/receipt_bg_bottom" 
+					android:layout_below="@+id/cameradash"> -->
+				<RelativeLayout android:id="@+id/linesSection"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@+id/cameradash"
+					android:layout_centerHorizontal="true" android:gravity="center">
+
+					<RelativeLayout android:id="@+id/addressMapLayout"
+						android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+						<RelativeLayout android:id="@+id/addressMapLayout"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:paddingTop="35dip" android:paddingLeft="10dip"
+							android:paddingRight="10dip" android:paddingBottom="50dip"
+							android:gravity="center">
+
+							<TableLayout android:id="@+id/addresslayout"
+								android:layout_width="140dip" android:layout_height="wrap_content"
+								android:stretchColumns="1" android:orientation="horizontal"
+								android:background="@drawable/map_icon">
+
+								<TableRow android:id="@+id/addressheading">
+									<TextView android:id="@+id/addressText" android:text="@string/addressLabel"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:textColor="#28765B" android:textSize="18dip"
+										android:textStyle="bold" android:paddingLeft="30dip" />
+								</TableRow>
+								<TableRow android:id="@+id/addresstext">
+									<TextView android:id="@+id/locationAddress"
+										android:text="909 Grand Avenue San Diego, CA 92109"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:textColor="#000000" android:textSize="14dip"
+										android:maxLines="2" android:paddingLeft="10dip" />
+								</TableRow>
+
+							</TableLayout>
+
+							<LinearLayout android:orientation="vertical"
+								android:layout_weight="1" android:paddingLeft="10dip"
+								android:layout_width="wrap_content" android:id="@+id/maplayout"
+								android:layout_height="wrap_content" android:layout_toRightOf="@+id/addresslayout"
+								android:clickable="true">
+
+								<LinearLayout android:orientation="vertical"
+									android:layout_width="wrap_content" android:id="@+id/phoneLayout"
+									android:layout_height="wrap_content" android:layout_marginLeft="8dip"
+									android:background="@drawable/phone_icon">
+
+									<!-- <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" 
+										android:id="@+id/mapIcon" android:src="@drawable/map_icon"> </ImageView> -->
+
+									<TextView android:id="@+id/locationMap" android:text="@string/phoneLabel"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:textColor="#28765B" android:textSize="18dip"
+										android:paddingLeft="20dip" android:textStyle="bold"
+										android:layout_marginLeft="8dip" android:singleLine="true" />
+
+									<TextView android:id="@+id/locationContact"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:textColor="#000000" android:textSize="14dip"
+										android:text="(619) 752-2445" android:layout_marginLeft="8dip"
+										android:layout_marginTop="-5dip" android:singleLine="true"
+										android:paddingLeft="20dip" />
+								</LinearLayout>
+
+								<LinearLayout android:orientation="horizontal"
+									android:clickable="true" android:layout_width="wrap_content"
+									android:layout_marginTop="25dip" android:id="@+id/calllayout"
+									android:layout_height="wrap_content" android:layout_marginLeft="8dip"
+									android:visibility="gone">
+
+									<ImageView android:id="@+id/phone"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:src="@drawable/phone_icon" />
+
+									<TextView android:id="@+id/locationContact"
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										android:textColor="#000000" android:textSize="18dip"
+										android:text="(619) 752-2445" android:layout_marginLeft="8dip"
+										android:layout_marginTop="-5dip" android:singleLine="true"
+										android:textStyle="bold" />
+								</LinearLayout>
+							</LinearLayout>
+
+						</RelativeLayout>
+					</RelativeLayout>
+				</RelativeLayout>
+
+			</RelativeLayout>
+			<!-- <LinearLayout android:id="@+id/message" android:orientation="horizontal" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/receipt_bg" 
+				android:layout_marginTop="15dip" android:gravity="center_horizontal" android:layout_marginBottom="10dp"> 
+				<Button android:id="@+id/myRewards" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:background="@drawable/my_rewards" android:layout_marginRight="5dp" 
+				/> <Button android:id="@+id/faqButton" android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:background="@drawable/faq" android:layout_marginLeft="5dip" 
+				android:layout_toRightOf="@+id/myRewards" /> </LinearLayout> -->
+
+
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>
+
+
+
+

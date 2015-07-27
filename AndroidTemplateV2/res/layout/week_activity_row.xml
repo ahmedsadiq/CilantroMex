@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dealsrow" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@drawable/activity_mid"
+	android:paddingTop="5dip" android:paddingBottom="5dip">
+
+	<TextView android:id="@+id/day1" android:text="14 Aug 11"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#808080" android:layout_column="1"
+		android:paddingTop="3dip" android:textSize="18dip"
+		android:layout_marginLeft="5dip" android:singleLine="true"
+		android:layout_weight="1" />
+
+	<TextView android:id="@+id/day1Status" android:text="pending"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#808080" android:layout_column="2"
+		android:paddingRight="10dip" android:paddingTop="3dip"
+		android:gravity="right" android:layout_marginRight="10dip"
+		android:textSize="18dip" android:layout_weight="1" />
+
+	<ImageView android:id="@+id/day1Image" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:gravity="right"
+		android:layout_marginRight="10dip" android:src="@drawable/activity_help"
+		android:layout_column="2" android:visibility="gone"
+		android:layout_weight="1" android:layout_marginTop="2dip"
+		android:layout_marginBottom="4dip" />
+
+
+</TableRow>

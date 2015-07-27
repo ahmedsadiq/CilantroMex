@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/header"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="@drawable/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:focusable="true"
+	android:focusableInTouchMode="true">
+
+
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo">
+
+	</RelativeLayout>
+	<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/header">
+		<RelativeLayout android:id="@+id/loginlayoutback"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginLeft="7dip" android:layout_marginBottom="5dip"
+			android:layout_marginRight="7dip" android:layout_marginTop="10dip"
+			android:layout_below="@+id/header">
+
+			<LinearLayout android:id="@+id/loginlayout"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:visibility="gone"
+				android:paddingLeft="30dip" android:paddingRight="30dip"
+				android:layout_marginTop="30dip">
+
+				<RelativeLayout android:id="@+id/loginlayouttext"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="20dip">
+
+					<TextView android:id="@+id/logintext" android:text="@string/log_in"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#ffffff" android:textSize="19dip"
+						android:textStyle="bold" android:layout_alignParentTop="true"
+						android:layout_alignParentLeft="true" />
+
+					<TextView android:id="@+id/welcomeBack" android:text="@string/welcome_bck"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#ffffff" android:layout_below="@+id/logintext"
+						android:textSize="14dip" android:textStyle="bold" />
+
+
+				</RelativeLayout>
+
+				<EditText android:id="@+id/email_field_login"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" android:paddingLeft="7dip"
+					android:textSize="18dip" android:autoText="false"
+					android:textColor="#b4b3b4" android:capitalize="none"
+					android:scrollHorizontally="true" android:layout_marginTop="10dip"
+					android:hint="@string/email" android:background="@drawable/info_top" />
+
+				<EditText android:id="@+id/password_field_login"
+					android:inputType="textPassword" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:singleLine="true"
+					android:textSize="18dip" android:autoText="false"
+					android:textColor="#b4b3b4" android:capitalize="none"
+					android:scrollHorizontally="true" android:paddingLeft="7dip"
+					android:hint="@string/password" android:background="@drawable/info_bottom"
+					android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" />
+
+				<Button android:id="@+id/loginButton" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_marginTop="15dip"
+					android:background="@drawable/login" />
+
+				<Button android:id="@+id/fb_button_login"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="10dip" android:background="@drawable/fb_login" />
+
+				<TextView android:id="@+id/forgetPasswordText"
+					android:text="@string/forget_password" android:layout_marginTop="30dip"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="14dip"
+					android:textStyle="bold" />
+				<TextView android:id="@+id/openSignupScreenText"
+					android:text="@string/opensignup_screentext" android:layout_marginTop="30dip"
+					android:layout_marginBottom="10dip" android:layout_width="wrap_content"
+					android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="14dip"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+	
+			<LinearLayout android:id="@+id/signUpLayout"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingLeft="30dip"
+				android:paddingRight="30dip">
+
+				<TextView android:textSize="19dip" android:text="@string/sign_up"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:id="@+id/signtext" android:layout_marginTop="40dip"
+					android:textColor="#ffffff" android:textStyle="bold"></TextView>
+
+				<TextView android:textSize="14dip"
+					android:layout_marginBottom="10dip" android:text="@string/keep_rewards"
+					android:layout_height="wrap_content" android:gravity="right"
+					android:layout_width="wrap_content" android:id="@+id/forgetPasswordText"
+					android:textStyle="bold" android:textColor="#ffffff"></TextView>
+
+				<EditText android:id="@+id/email_field_signup"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" android:paddingLeft="7dip"
+					android:textColor="#b4b3b4" android:textSize="18dip"
+					android:autoText="false" android:capitalize="none"
+					android:scrollHorizontally="true" android:layout_marginTop="3dip"
+					android:hint="@string/email" android:background="@drawable/info_top" />
+
+				<EditText android:id="@+id/password_field_signup"
+					android:inputType="textPassword" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:singleLine="true"
+					android:textColor="#b4b3b4" android:textSize="18dip"
+					android:autoText="false" android:capitalize="none"
+					android:scrollHorizontally="true" android:paddingLeft="7dip"
+					android:hint="@string/create_password" android:background="@drawable/info_bottom"
+					android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" />
+
+				<EditText android:id="@+id/promocode_field_signup"
+					android:inputType="textPassword" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:singleLine="true"
+					android:textColor="#b4b3b4" android:textSize="18dip"
+					android:autoText="false" android:capitalize="none"
+					android:scrollHorizontally="true" android:paddingLeft="7dip"
+					android:hint="Promo Code" android:background="@drawable/info_bottom"
+					android:visibility="gone" />
+
+				<Button android:id="@+id/signupButton" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_marginTop="20dip"
+					android:background="@drawable/signup" />
+
+
+				<Button android:id="@+id/fb_button_signup"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="10dip" android:background="@drawable/fb_login" />
+
+				<TextView android:id="@+id/alreadyMember" android:text="@string/already_member"
+					android:layout_marginTop="30dip" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:textSize="14dip" android:textStyle="bold"
+					android:layout_gravity="center_horizontal" />
+
+				<TextView android:id="@+id/terms" android:text="@string/terms"
+					android:layout_marginTop="30dip" android:layout_marginBottom="10dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="14dip"
+					android:textStyle="bold" android:layout_gravity="center_horizontal" />
+
+			</LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
+
+

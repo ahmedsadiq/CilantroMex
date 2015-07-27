@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<RelativeLayout android:id="@+id/headerLayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"   android:background="@drawable/topbar_blank"
+		>
+
+		<TextView android:id="@+id/headerText" android:text="@string/camera_header"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:textColor="#ffffff"
+			android:textSize="16dip" android:paddingTop="5dip"
+			android:layout_marginRight="7dip" android:layout_marginTop="10dip" android:textStyle="bold"/>
+
+
+		<ImageView android:id="@+id/questonMarkBtn" android:src="@drawable/help"
+			android:layout_width="33dip" android:layout_height="33dip"
+			android:layout_toRightOf="@+id/headerText"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:layout_marginTop="10dip" android:layout_marginRight="15dip" />
+
+	</RelativeLayout>
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/scanner" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="horizontal"
+		android:layout_below="@+id/headerLayout">
+		<com.dg.android.lcp.utils.CameraLiveView		android:id="@+id/camera_live_view" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+		<ImageView android:id="@+id/headerImage" android:background="@drawable/receipt_guide"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:scaleType="centerInside" />
+	</FrameLayout>
+
+	<RelativeLayout android:id="@+id/footerLayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/camera_bar">
+
+		<Button android:id="@+id/cameraCaptureBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:background="@drawable/camera"
+			android:layout_centerInParent="true" />
+ 
+		<Button android:id="@+id/retakeBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:background="@drawable/retake_button"
+			android:layout_marginTop="5dip" android:visibility="gone" />
+
+		<Button android:id="@+id/uploadBtn" android:layout_width="wrap_content"
+			android:layout_centerVertical="true" android:layout_height="wrap_content"
+			android:background="@drawable/submit_photo_button"
+			android:layout_marginTop="5dip" android:layout_alignParentRight="true"
+			android:visibility="gone" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

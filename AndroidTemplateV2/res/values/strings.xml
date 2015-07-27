@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, LocationListingActivity!</string>
+	<string name="app_name">La Crepe</string>
+	<string name="earnpoints">Gana pesos, recibe premois</string>
+	<string name="spend">Recuperar contraseña</string>
+	<string name="notWorry">Recuperar contraseña</string>
+	<string name="enteremail">Introduzca su email y le enviaremos la contraseña.</string>
+	<string name="pic_desc_text">HEMOS RECIBIDO TU RECIBO. GANARAS TUS PESOS EN MENOS DE MEDIA HORA.</string>
+	<string name="pic_desc_text1">SACA UNA FOTO DE TU RECIBO Y GANA PREMIOS.</string>
+
+	<string name="addressLabel">Dirección</string>
+	<string name="mapLabel">Dirección</string>
+	<string name="phoneLabel">Teléfono</string>
+	<string name="emptytext">&#160;\n&#160;\n</string>
+	<string name="receiptPhotos">Recomendaciones de fotografía</string>
+	<string name="placeSurface">&#8226;	Ponga el recibo en una área plana</string>
+	<string name="adequate">&#8226; Use iluminción suficiente </string>
+	<string name="notBlury">&#8226; Asegure la claridad del texto </string>
+	<string name="needMoreHelp">¿Necesitas ayuda?</string>
+	<string name="abouttext">“La Crepe Parisienne” ofrece crepas saladas y dulces, bebidas embotelladas y café gourmet hecho al instante con ingredientes de la mas alta calidad.Todo esto con un servicio rápido y amigable en un ambiente arquitectónico de una autentica crepería parisina con un toque moderno.</string>
+	<string name="faq_ques_1">¿Cómo funciona?</string>
+	<string name="faq_ans_1">Para acumular pesos solo tienes que tomar y mandar una foto de tu recibo de compra usando la APP. Simplemente selecciona la ubicación en la que estas y aprieta el botón de “enviar”.
+	</string>
+	<string name="faq_ques_2">¿Cómo se cuantos pesos tengo?</string>
+	<string name="faq_ans_2">Escoge la opción de premios en la pantalla de tu app para ver tus pesos acumulados y los premios a los que podrás ganar.
+</string>
+	<string name="faq_ques_3">¿Cómo obtengo mis premios?</string>
+	<string name="faq_ans_3">Los regalos a los que tienes opción están en el botón de Premios. Un botón verde de premio significa que los puedes obtener en ese momento, un botón gris significa que todavía estas acumulando pesos para ganarlo. Para obtener el premio solo selecciona el premio en verde y se convertirá en un cupón digital.</string>
+	<string name="faq_ques_4">¿Cómo uso un cupón digital?</string>
+	<string name="faq_ans_4">Después de seleccionar un premio en color gris, verás un botón morado con la palabra \"Usar\". Antes de presionar el botón, llama a tu mesero, ya que tendrás 2 minutos para mostrarle el código que aparecerá en la página siguiente. Después de pulsar \"Usar\", te aparecerá una notificación, deberás mostrarle a tu mesero tu código único de 3 dígitos y así podrás recibir tu premio.</string>
+	<string name="faq_ques_5">Tengo problemas para subir mi recibo a la APP. ¿Qué hago?</string>
+	<string name="faq_ans_5_1">Mándanos un email con tu recibo y tu cuenta de email a</string>
+	<string name="mail">
+		<u>lacrepe@rlvt.net</u>
+<!-- 		 Después de seleccionar un -->
+	</string>
+	<string name="faq_ans_5_2">describiendonos tu problema. Nosotros actualizaremos tu cuenta con los pesos que ganaste.
+</string>
+	<string name="faq_ques_6">Puedo hacer sugerencias?</string>
+
+	<string name="faq_ans_6">Claro! Estaremos muy contentos de escúchalas en nuestro mail de </string>
+	<string name="no_location_error_message">Por favor encienda servicios de localización (en Ajustes o en Privacidad  para iPhone, Servicios de ubicacion para Android) para permitir que La Crepe Parisienne le recompense.</string>
+		
+	<string name="user_not_logged_in">Por favor, regístrese</string>
+	<string name="uploading">recepción de carga</string>
+	<string name="camera_header">Centra recibo, toma foto</string>
+	<string name="terms"><u>Términos de uso</u></string>
+	<string name="gcm_message">From GCM: you got message!</string>
+	<string name="errorMessage401">Por favor, inicie sesión en continuar</string>
+	<string name="ok">Ok</string>
+	<string name="support_email">lacrepe@rlvt.net</string>
+	<string name="Thanks">Gracias</string>
+	<string name="FAQ">Preguntas frecuentes</string>
+	<!-- How it works -->
+	<string name="Eat">Disfruta</string>
+	<string name="eat_det_1">tu crepa de</string>
+	<string name="eat_det_2">\"La Crepe Parisenne\"</string>
+	<string name="eat_det_3"></string>
+	<string name="Snap">Foto</string>
+	<string name="snap_det">Saca una foto de</string>
+	<string name="snap_txt2">tu ticket para ganar</string>
+	<string name="snap_txt3">pesos.</string>
+	<string name="claim">Usa tus pesos</string>
+	<string name="claim_det"></string>
+	<string name="claim_txt2">acumulados para ganar</string>
+	<string name="claim_txt3">productos gratis y\npremios sorpresa.</string>
+	
+	<string name="about_us">Concepto</string>
+	<string name="how_reward">Como ganar premios</string>
+	<string name="faq">Preguntas frecuentes</string>
+	<string name="my_profile">Mi perfil </string>
+	<string name="promo_code">Promociones</string>
+	<string name="cont_us">Contactar</string>
+	<string name="log_out">Salir de la APP</string>
+	<!-- location detail -->
+	<string name ="Get_reward">¡Gana Pesos!</string>
+	
+	<string name="log_in">Conectar</string>
+	<string name="welcome_bck">Bienvenido de regreso</string>
+	<string name="forget_password">¿Olvidaste tu contraseña?</string>
+	<string name="sign_up">Regístrate</string>
+	<string name="keep_rewards">para dar seguimiento a tus premios</string>
+	<string name="already_member">Si ya eres un miembro, puedes iniciar aquí</string>
+	<string name="this_name">This is name</string>
+	<string name="password_emailed">API</string>
+	
+	<string name="enter_pc">Escribe tu código de promoción</string>
+	<string name="case_sensitive">Sin espacios, sensible a mayúsculas o minúsculas.</string>
+	
+	<string name="address">Dirección</string>
+	<string name="mark_button">Código:</string>
+	<string name="reward_button">Código:</string>
+	<string name="received_1">PRESENTA A TU  </string>
+	<string name="received_2">MESERO CUANDO </string>
+	<string name="received_3">PAGUE LA CUENTA</string>
+	
+	<string name="email_subject">La Crepe</string>
+	
+	<string name="tot_points">La Crepe Pesos</string>
+	<string name="view_act">Ver actividad</string>
+	<string name="reward_offer">Premios y promociones</string>
+	<string name="tell_us">Dínos lo que piensas..</string>
+	<string name="update_pass">Actualice su contraseña</string>
+	<string name="submit">Enviar</string>
+	
+	<string name="receipt_receive">Se ha recibido su recibo. La imagen se esta procesando.</string>
+	<string name="receipt_process">Su recibo esta procesando y pendiente de decisión.</string>
+	<string name="receipt_rejected">Se rechazó su recibo. Póngase en contacto con soporte para más detalles.</string>
+	
+	<string name="update_process">Por favor espere..</string>
+	<string name="loading">Por favor espere..</string>
+	<string name="password_sent">API</string>
+	
+	<string name="wait">Por favor espere..</string>
+	<string name="load_loc">Por favor espere..</string>
+	<string name="sorry">Lo siento no resultados.</string>
+	<string name="sign_in_wait">Por favor espere..</string>
+	<string name="sign_up_wait">Por favor espere..</string>     
+	<string name="password_length">API</string>
+	<string name="reward_acess_email">To continue sign up for the rewards program Please grant access to email address.</string>
+	<string name="reward_list">Por favor espere..</string>
+	<string name="use_reward">¿Quieres utilizar esta premio?</string>
+	<string name="sending">Por favor espere..</string>
+	
+	<string name="menu_locations">Ubicaciones</string>
+	<string name="menu_myrewards">Premios</string>
+	<string name="menu_wall">Muro</string>
+	<string name="menu_info">Información</string>
+	<string name="connection_not_available">Un error de conexión</string>
+	<string name="promocode_not_working">SI NO FUNCIONA, CONTÁCTANOS</string>
+	<string name="old_password">Antigua contraseña</string>
+	<string name="new_password">Nueva contraseña</string>
+	<string name="repeat_password">Repetir contraseña</string>
+	
+	<string name="cancel">Cancelar</string>
+	<string name="confirm">Confirmar</string>
+	<string name="confirm_email_prompt">Por favor confirma tu correo electrónico :</string>
+	<string name="password">Contraseña</string>
+	<string name="email">Email</string>
+	<string name="create_password">Contraseña</string>
+	<string name="opensignup_screentext">¿Miembro nuevo? Registrate.</string>
+	<string name="reward_expired">EXPIRADO</string>
+	<string name="reward_free">GRATIS</string>
+	<string name="reward_delete">ELIMINAR</string>
+	<string name="deal_submitted_title">¡Gracias!</string>
+	<string name="remind_me_later">Recórdarmelo más tarde</string>
+	<string name="staff_use_code">Código: </string>
+	<string name="reward_claim_popup">¿Quieres utilizar esta premio?</string>
+	<string name="promocode_hint">Código de promoción</string>
+	<string name="logout_progress_dialog"></string>
+	<string name="loading_rewards"></string>
+	<string name="Received">Recibido</string>
+	<string name="Pending">Pendiente</string>
+	<string name="Rejected">Rechazado</string>
+	
+<!-- 	<string name="https_url">https://app.relevantmobile.com/api/v1</string> -->
+<!-- 	<string name="http_url">http://app.relevantmobile.com/api/v1</string> -->
+<!-- 	<string name="locale_header_value">es</string> -->
+	
+<!-- 	<string name="https_url">https://fierce-robot-3818.herokuapp.com/api/v1 -->
+<!-- 	</string> -->
+<!-- 	<string name="http_url">http://fierce-robot-3818.herokuapp.com/api/v1 -->
+<!-- 	</string> -->
+	
+<!-- 	<string name="facebook_url">http://www.facebook.com/lacrepeparisienne?v=feed</string> -->
+<!-- 	<string name="terms_url">http://demo.relevantmobile.com/terms_of_use?locale=es</string> -->
+<!-- 	<string name="keyboardfilter">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890.\'\"\?,.!() -->
+<!-- 	</string> -->
+	
+	
+	<string name="imagecontent">a</string>
+    <string name="freebr">FREE</string>
+    <string name="showcshier">PRESENTA A TU MESERO CUANDO PAGUE LA CUENTA</string>
+    <string name="showwaiter">Muestra el camarero el código. Cuando terminas, pulsa \"Atras\“.</string>
+    <string name="timeremaining">Tiempo restante:</string>
+    <string name="usar">Usar</string>
+    <string name="usado">Usado</string>
+    <string name="time">1</string>
+    <string name="code">Código: </string>
+    <string name="codeval">2</string>
+    <string name="reedeemd">usado</string>
+<!--     <string name="waitertext">Muestra el camarero el código. Cuando terminas, pulsa \"Atras\".</string> -->
+    <string name="waitertext">Muestra a tu mesero el código. Cuando termines, presiona \"atrás\".</string>
+    
+	<string name="infomenu">Menú</string>
+    <string name="claibackmmessageheader">¿Nuestra mesero obtener tu código?</string>
+    <string name="claibackmmessages">Si es así, pulsa \"Continuar\". Si no es así, pulsa \"Cancelar\" y mostrar tu código único para nuestro mesero.</string>
+    
+    <string name="claimmesageheader">¿Estás segura?</string>
+    <string name="claimmesages">Por favor NO pulsa \“Confirmar\” hasta que estas enfrente de un mesero. Cupón digital esta válida durante 2 minutos solamente.</string>
+	
+</resources>
+
+	     

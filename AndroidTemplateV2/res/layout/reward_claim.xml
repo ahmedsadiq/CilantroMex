@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/header"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="@drawable/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo">
+
+	</RelativeLayout>
+
+	<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/header"
+		android:background="@drawable/dashed_border" android:layout_gravity="center_horizontal" android:layout_margin="10dip">
+
+
+		<RelativeLayout android:id="@+id/reward"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_below="@+id/header"
+			android:paddingLeft="30dip" android:paddingRight="30dip"
+			android:paddingTop="0dip" android:layout_margin="10dip" >
+
+			<ImageView android:id="@+id/crep" android:layout_width="wrap_content"
+				android:layout_height="90px" android:src="@drawable/claim_logo"
+				android:layout_marginTop="5dip" android:layout_centerHorizontal="true" />
+
+			<TextView android:id="@+id/freeoffer" android:text="Free coffee or tea"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="20dip" android:textStyle="bold"
+				android:layout_marginTop="15dip" android:textColor="#28765B"
+				android:layout_centerHorizontal="true" android:layout_below="@+id/crep" />
+
+			<TextView android:id="@+id/restaurantAddress" android:text="@string/address"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="15dip" android:textStyle="bold" android:textColor="#000000"
+				android:layout_centerHorizontal="true" android:layout_below="@+id/freeoffer" />
+
+			<LinearLayout android:id="@+id/buttonMark"
+				android:layout_below="@+id/freeoffer" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dip"
+				android:background="@drawable/button_bg"
+				android:layout_centerHorizontal="true">
+
+				<Button android:id="@+id/markButton" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:text="@string/mark_button"
+					android:textSize="14dip" android:textColor="#ffffff"
+					android:background="@drawable/mark_as_used" android:layout_margin="5dip"
+					android:paddingTop="15dip" />
+
+				<Button android:id="@+id/rewardusedButton"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:text="@string/reward_button" android:textSize="14dip"
+					android:textColor="#ffffff" android:layout_margin="5dip"
+					android:paddingTop="15dip" android:visibility="gone"
+					android:background="@drawable/reward_used" />
+
+			</LinearLayout>
+			<TextView android:id="@+id/recevied1" android:text="@string/received_1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="14dip"
+				android:textStyle="bold" android:singleLine="true"
+				android:layout_marginTop="10dip" android:layout_centerHorizontal="true"
+				android:layout_below="@+id/buttonMark" />
+			<TextView android:id="@+id/recevied2" android:text="@string/received_2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="14dip"
+				android:textStyle="bold" android:singleLine="true"
+				android:layout_centerHorizontal="true" android:layout_below="@+id/recevied1" />
+			<TextView android:id="@+id/recevied3" android:text="@string/received_3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="14dip"
+				android:textStyle="bold" android:singleLine="true"
+				android:layout_centerHorizontal="true" android:layout_below="@+id/recevied2" />
+			<TextView android:id="@+id/emptyText2" android:text="@string/emptytext"
+				android:layout_width="wrap_content" android:layout_below="@+id/recevied"
+				android:layout_height="wrap_content" android:textColor="#ffffff" />
+
+			<TextView android:id="@+id/emptyText3" android:text="@string/emptytext"
+				android:layout_width="wrap_content" android:layout_below="@+id/recevied"
+				android:layout_height="wrap_content" android:textColor="#ffffff" />
+
+		</RelativeLayout>
+	</ScrollView>
+	<TextView android:id="@+id/emptyText" android:text="@string/emptytext"
+		android:layout_width="wrap_content" android:layout_below="@+id/reward"
+		android:layout_height="wrap_content" android:textColor="#ffffff" />
+
+</RelativeLayout>

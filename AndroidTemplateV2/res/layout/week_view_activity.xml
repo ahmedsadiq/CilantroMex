@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/header"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="@drawable/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	>
+
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo">
+
+	</RelativeLayout>
+
+	<TableLayout android:id="@+id/helptableheader"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5px" android:stretchColumns="2"
+		android:layout_marginTop="10dip" android:paddingLeft="20dip"
+		android:layout_below="@+id/header" android:paddingRight="20dip"
+		android:orientation="horizontal">
+
+		<TableRow android:id="@+id/totalPointsRow"
+			android:background="@drawable/activity_top" android:layout_marginTop="5dip">
+
+			<TextView android:id="@+id/totalpoints" android:text="@string/tot_points"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#808080" android:layout_column="1"
+				android:paddingTop="5dip" android:paddingBottom="5dip"
+				android:textSize="18dip" android:layout_marginLeft="5dip"
+				android:singleLine="true" android:layout_weight="1"
+				android:textStyle="bold" />
+
+			<TextView android:id="@+id/totalPointsNumber" android:text="25"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#808080" android:layout_column="2"
+				android:gravity="right" android:paddingTop="5dip"
+				android:paddingBottom="5dip" android:paddingRight="10dip"
+				android:layout_marginRight="5dip" android:textSize="18dip"
+				android:layout_weight="1" android:textStyle="bold" />
+		</TableRow>
+	</TableLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/helptableheader">
+		<LinearLayout android:id="@+id/body"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TableLayout android:id="@+id/helptable"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="5dip" android:stretchColumns="2"
+				android:paddingLeft="20dip" android:paddingRight="20dip"
+				android:orientation="horizontal">
+
+			</TableLayout>
+			<TextView android:id="@+id/emptyText" android:text="@string/emptytext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+
+	</ScrollView>
+
+
+</RelativeLayout>
+

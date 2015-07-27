@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/map_popup_bg" android:padding="15dip">
+
+	<TextView android:id="@+id/dialogTitle" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textColor="#FFFFFF"
+		android:layout_marginTop="-5dip"
+		android:textStyle="bold" android:text="This is name" android:textSize="19px" />
+
+	<TextView android:id="@+id/addressName" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  android:textSize="18px"
+		  />
+
+
+	 
+</LinearLayout>

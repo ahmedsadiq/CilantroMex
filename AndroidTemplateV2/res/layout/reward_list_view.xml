@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="@drawable/background"
+	android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo">
+
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_below="@+id/header" android:layout_height="fill_parent"
+		android:id="@id/body">
+
+		<TableLayout android:id="@+id/totalpiointtable"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingTop="5dip" android:paddingBottom="10dip" android:stretchColumns="2"
+			android:layout_marginTop="5dip" android:paddingLeft="20dip"
+			android:layout_below="@+id/headertext" android:paddingRight="20dip"
+			android:orientation="horizontal">
+
+			<TableRow android:id="@+id/totalRow" android:background="@drawable/activity_top"
+				android:layout_marginTop="5dip">
+
+				<TextView android:id="@+id/totalpoints" android:text="@string/tot_points"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#808080" android:layout_column="1"
+					android:paddingTop="10dip" android:textSize="20dip"
+					android:layout_marginLeft="10dip" android:singleLine="true"
+					android:textStyle="bold" android:layout_weight="1" />
+
+				<TextView android:id="@+id/totalPointsNumber" android:text="25"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#808080" android:layout_column="2"
+					android:gravity="right" android:paddingRight="5dip"
+					android:textStyle="bold" android:layout_marginRight="15dip"
+					android:textSize="20dip" android:paddingTop="10dip" />
+			</TableRow>
+
+			<TableRow android:id="@+id/viewActivityRow"
+				android:background="@drawable/info_bottom">
+
+				<TextView android:id="@+id/totalpoints" android:text="@string/view_act"
+					android:layout_width="240dip" android:layout_height="wrap_content"
+					android:textColor="#808080" android:layout_column="1"
+					android:paddingTop="10dip" android:textSize="20dip"
+					android:layout_marginLeft="10dip" android:singleLine="true"
+					android:textStyle="bold" android:layout_weight="1" />
+
+				<ImageView android:id="@+id/viewArrow" android:src="@drawable/arrow_gray"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_column="2" android:layout_gravity="right"
+					android:paddingRight="5dip" android:layout_marginRight="15dip"
+					android:paddingTop="15dip" />
+			</TableRow>
+		</TableLayout>
+
+
+		<!-- <ScrollView android:id="@+id/scroll" android:layout_below="@+id/totalpiointtable" 
+			android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/bg_repeat" 
+			android:fillViewport="true" android:layout_marginTop="15dip"> -->
+
+		<ScrollView android:id="@+id/scroll" android:layout_below="@+id/totalpiointtable"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:fillViewport="true" android:layout_marginTop="15dip" >
+
+			<LinearLayout android:id="@+id/body"
+				android:layout_below="@+id/choserewards" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical"
+				android:layout_gravity="center_horizontal">
+
+				<TextView android:id="@+id/choserewards" android:text="@string/reward_offer"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="25dip" android:layout_marginTop="15dip"
+					android:singleLine="true" android:textColor="#ffffff"
+					android:textStyle="bold" android:layout_marginBottom="5dip"
+					android:layout_gravity="center_horizontal"/>
+
+
+				<TableLayout android:stretchColumns="2"
+					android:paddingRight="20dip" android:id="@+id/rewards_detail_table"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:orientation="horizontal" android:fastScrollEnabled="true">
+
+				</TableLayout>
+				<TextView android:id="@+id/emptyText" android:text="@string/emptytext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>
+
+
+</RelativeLayout>
+ 

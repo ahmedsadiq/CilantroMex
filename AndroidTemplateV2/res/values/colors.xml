@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="white">#FFFFFF</color>
+  <color name="black">#000000</color> 
+  <color name="green">#009900</color> 
+  <color name="blue">#00558c</color>
+  <color name="purple">#800080</color>
+  <color name="red">#dd0021</color>
+  <color name="darkgrey">#747170</color>
+  <color name="lightgrey">#cacaca</color>
+  <color name="grey">#94a9c0</color>
+  <color name="blueTopBar">#5e144c</color>
+  <color name="defaultBackground">#FFFFFF</color> 
+  <color name="forumBlue">#0066FF</color>
+  <color name="calendargreen">#55ff0000</color>
+	<color name="calendarpink">#44F52887</color>
+        <color name="textDate">#000</color>
+        <color name="calBG">#dfe0e1</color>
+        <color name="greybg1">#706f6f</color>
+        <color name="default_green">#28765B</color>
+</resources>

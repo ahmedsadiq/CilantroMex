@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dealsrow" android:paddingTop="5dip"
+	android:paddingBottom="5dip" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout android:id="@+id/restaurentname"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:stretchColumns="2" android:orientation="horizontal">
+		<TableRow android:id="@+id/questionRow"
+			android:layout_marginLeft="10dip">
+			<TextView android:id="@+id/satisfy" android:text="How satisfied are you?"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="20dip" android:layout_marginTop="10dip"
+				android:textStyle="bold" android:textColor="#000000"
+				android:layout_below="@+id/tellus" />
+
+
+		</TableRow>
+		<TableRow android:id="@+id/choiceRow" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:id="@+id/satisfuLayout" android:layout_height="wrap_content"
+				android:layout_below="@+id/satisfy" android:orientation="horizontal"
+				android:layout_marginTop="5dip">
+			<ImageView android:id="@+id/very" android:src="@drawable/thumbs_down"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="10dip" android:layout_marginLeft="5dip" />
+				<RadioGroup android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="horizontal"
+					android:id="@+id/satisfygroup" android:layout_marginLeft="5dip">
+					<RadioButton android:checked="false" android:id="@+id/option1"
+						android:button="@drawable/radial" android:layout_marginLeft="5dip" />
+					<RadioButton android:checked="false" android:id="@+id/option2"
+						android:button="@drawable/radial" />
+					<RadioButton android:checked="true" android:id="@+id/option3"
+						android:layout_marginLeft="4dip" android:button="@drawable/selected" />
+					<RadioButton android:checked="false" android:id="@+id/option4"
+						android:layout_marginLeft="4dip" android:button="@drawable/radial" />
+					<RadioButton android:checked="false" android:id="@+id/option5"
+						android:layout_marginLeft="4dip" android:button="@drawable/radial" />
+				</RadioGroup>
+				<ImageView android:id="@+id/very" android:src="@drawable/thumbs_up"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="5dip" />
+			</LinearLayout>
+		</TableRow>
+	</TableLayout>
+</TableRow>

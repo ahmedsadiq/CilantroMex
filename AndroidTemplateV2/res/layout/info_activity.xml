@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:theme="@android:style/Theme.NoTitleBar" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar_logo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/helptable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingTop="5px"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:id="@+id/menuVivoRow"
+            android:background="@drawable/info_top" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/menuVivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/infomenu"
+                    android:textColor="#808080"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/menuVivoArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="15dip"
+                android:gravity="right"
+                android:paddingRight="3dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" >
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/aboutVivoRow"
+            android:background="@drawable/info_mid" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/aboutVivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/about_us"
+                    android:textColor="#808080"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/aboutVivoArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="15dip"
+                android:gravity="right"
+                android:paddingRight="3dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" >
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/getRewardsRow"
+            android:background="@drawable/info_mid" >
+
+            <TextView
+                android:id="@+id/getReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:text="@string/how_reward"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/getrewardsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingRight="3dip"
+                android:paddingTop="8dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/faqRow"
+            android:background="@drawable/info_mid" >
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:text="@string/faq"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/faqArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingRight="3dip"
+                android:paddingTop="8dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/updatePasswordRow"
+            android:background="@drawable/info_mid" >
+
+            <TextView
+                android:id="@+id/updatePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:text="@string/my_profile"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/contactUsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingRight="3dip"
+                android:paddingTop="8dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/promoCodeRow"
+            android:background="@drawable/info_mid" >
+
+            <TextView
+                android:id="@+id/promoCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:text="@string/promo_code"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/promoCodeArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingRight="3dip"
+                android:paddingTop="8dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/contactUsRow"
+            android:background="@drawable/info_mid" >
+
+            <TextView
+                android:id="@+id/contactUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:text="@string/cont_us"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/contactUsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingRight="3dip"
+                android:paddingTop="8dip"
+                android:scaleType="fitEnd"
+                android:src="@drawable/info_arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/logoutRow"
+            android:background="@drawable/info_bottom" >
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/log_out"
+                android:textColor="#808080"
+                android:textSize="20dip" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

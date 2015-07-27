@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/header"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="@drawable/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+ 
+	<RelativeLayout android:id="@+id/header"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:background="@drawable/topbar_logo" >
+	
+	</RelativeLayout>
+
+
+	<TextView android:id="@+id/tellus" android:text="@string/tell_us"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="20dip" android:focusable="true"
+		android:focusableInTouchMode="true" android:textStyle="bold"
+		android:textColor="#ffffff" android:layout_marginLeft="15dip"
+		android:layout_below="@+id/header" android:layout_marginTop="5dip" />
+
+	<!-- <LinearLayout android:id="@+id/outerLayout" android:background="@drawable/about_bg" 
+		android:layout_below="@+id/tellus" android:layout_width="fill_parent" android:layout_marginTop="7dip" 
+		android:layout_height="fill_parent" android:orientation="vertical" > -->
+
+	<LinearLayout android:id="@+id/outerLayout"
+		android:layout_below="@+id/tellus" android:layout_width="fill_parent"
+		android:layout_marginTop="7dip" android:layout_height="fill_parent"
+		android:orientation="vertical" android:background="#000000">
+
+
+		<ScrollView android:layout_height="fill_parent" android:id="@+id/scrollView"
+			android:layout_marginTop="15dip" android:layout_marginBottom="15dip"
+			android:layout_width="fill_parent">
+			<RelativeLayout android:id="@+id/survey"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingLeft="10dip"
+				android:paddingRight="5dip">
+
+				<LinearLayout android:id="@+id/body"
+					android:layout_below="@+id/tellus" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+					android:background="#ffffff">
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:id="@+id/choicesLayout" android:layout_height="wrap_content"
+						android:orientation="horizontal" android:layout_marginTop="5dip">
+					</LinearLayout>
+
+					<TableLayout android:id="@+id/helptable"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingTop="5px" android:stretchColumns="1"
+						android:orientation="horizontal" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+					</TableLayout>
+
+
+					<!--<TextView android:id="@+id/comments" android:text="Comments" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:textSize="20dip" android:textStyle="bold" 
+						android:textColor="#28765B" android:layout_below="@+id/body" android:layout_marginLeft="15dip" 
+						/> <EditText android:id="@+id/comentsText" android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" android:singleLine="false" android:textColor="#9ea0a3" 
+						android:layout_below="@+id/comments" android:textSize="20dip" android:autoText="false" 
+						android:gravity="top|left" android:layout_marginTop="3dip" android:maxLines="7" 
+						android:background="@drawable/comments" android:layout_marginLeft="15dip" 
+						android:layout_marginRight="10dip" /> -->
+					<Button android:id="@+id/surveysubmit"
+						android:layout_centerHorizontal="true" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_marginTop="10dip"
+						android:background="@drawable/submit" android:layout_below="@+id/helptable"
+						android:clickable="true" android:layout_marginLeft="15dip"
+						android:layout_marginRight="10dip" />
+
+					<TextView android:id="@+id/emptyText2" android:text="@string/emptytext"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#ffffff" android:layout_below="@+id/surveysubmit" />
+				</LinearLayout>
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+</RelativeLayout>		

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:theme="@android:style/Theme.NoTitleBar" android:background="#fffff3"
+	android:orientation="vertical">
+	<RelativeLayout android:id="@+id/nameheader"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="wrap_content" android:background="@drawable/topbar_logo"
+		android:orientation="horizontal" android:layout_alignParentTop="true">
+
+		<TextView android:id="@+id/dealnameheader" android:textSize="20dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:textColor="#000000" />
+
+	</RelativeLayout>
+	<com.google.android.maps.MapView
+		android:id="@+id/mapView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" android:apiKey="0XnyXJI8haRhPInNCHIY9taIsMRMiMP0h5I9qHw"/>
+<!-- 		0m-2xCjLWqeSu0xuYoLfs_V363KrvAMi91i5Qbg -->
+<!-- 0XnyXJI8haRjhLSNEu-52yBCksDwLhN4CfGpDfw -->
+
+	<LinearLayout android:id="@+id/zoom" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" />
+
+</LinearLayout>

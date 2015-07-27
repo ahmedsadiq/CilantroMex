@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dealsrow" android:paddingTop="5px"
+	android:paddingBottom="5px" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+	<TableLayout android:id="@+id/restaurentname"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingTop="5px" android:stretchColumns="2"
+		android:orientation="horizontal">
+		<TableRow android:id="@+id/restaurentNameRow">
+			<TextView android:id="@+id/restaurentName" android:text="NoLite - 51 Spring St.a"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#ffffff" android:layout_column="1"
+				android:textSize="16dip" android:layout_marginLeft="10dip"
+				android:singleLine="true" android:textStyle="bold"
+				android:layout_weight="1" />
+			<ImageView android:id="@+id/nameArrow" android:scaleType="fitEnd"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:src="@drawable/arrow" android:layout_column="2"
+				android:layout_weight="1" android:layout_marginRight="17dip"
+				android:layout_marginTop="7dip" />
+		</TableRow>
+
+		<TableRow android:id="@+id/pointsRow">
+			<ImageView android:id="@+id/points" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_column="1"
+				android:src="@drawable/earn_points" android:layout_gravity="left"
+				android:scaleType="fitStart" android:layout_marginBottom="3dip"
+				android:layout_marginLeft="9dip" android:layout_weight="1" />
+
+
+
+		</TableRow>
+		<TextView android:id="@+id/offerId" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:visibility="gone" 
+			/>
+				
+		<View android:id="@+id/view_separator2" android:background="@drawable/line"
+			android:layout_width="fill_parent" android:layout_height="1dip"
+
+			android:layout_alignParentTop="true" android:layout_marginTop="5dip" />
+	</TableLayout>
+</TableRow>
